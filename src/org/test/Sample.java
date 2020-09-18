@@ -23,6 +23,7 @@ public class Sample {
 		
 		driver.manage().window().maximize();
 		
+		driver.quit();
 		WebElement txtSearch = driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"));
 		txtSearch.sendKeys("iPhone 11", Keys.ENTER);
 		
@@ -60,6 +61,7 @@ public class Sample {
 				
 			}			
 		}
+
 	}
 
 }
